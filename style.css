@@ -1,0 +1,39 @@
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-weight: 400;
+}
+
+.container {
+display: flex;
+flex-direction: column;
+}
+
+.join {
+  background-color: white;
+  
+}
+
+.join h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.join h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.monthly, .why {
+  color: white;
+}
+
+.monthly {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.monthly span {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.why {
+  background-color: hsl(179, 70%, 61%);
+}
