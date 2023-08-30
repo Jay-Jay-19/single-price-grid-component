@@ -1,24 +1,33 @@
 body {
   background-color: hsl(204, 43%, 93%);
-  font-weight: 400;
 }
 
 .container {
 display: flex;
 flex-direction: column;
+border-radius: 5px;
+overflow: hidden;
+}
+
+h1, h2 {
+  font-weight: 700;
 }
 
 .join {
   background-color: white;
-  
+  color: hsl(218, 22%, 67%);
+  line-height: 1.75;
+  padding: 1.5em;
 }
 
 .join h1 {
   color: hsl(179, 62%, 43%);
+  font-size: 20px;
 }
 
 .join h2 {
   color: hsl(71, 73%, 54%);
+  font-size: 18px;
 }
 
 .monthly, .why {
@@ -27,13 +36,69 @@ flex-direction: column;
 
 .monthly {
   background-color: hsl(179, 62%, 43%);
+  padding: 1.5em;
 }
 
-.monthly span {
-  font-size: 26px;
+.monthly h2 {
+  font-size: 18px;
+}
+
+.monthly #price29 {
+  font-size: 35px;
   font-weight: 700;
+  padding-right: 10px;
 }
 
+button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-family: Karla;
+  border: none;
+  padding: 15px;
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition-duration: 0.2s;
+
+}
 .why {
-  background-color: hsl(179, 70%, 61%);
+  background-color: hsl(179, 46%, 56%);
+  padding: 1.5em;
+}
+
+.why h2 {
+  font-size: 18px;
+}
+
+.why ul {
+  border: solid red 1px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+button:hover {
+  background-color: white;
+  color: hsl(71, 73%, 54%);
+}
+
+@media (min-width: 1023px) {
+
+  .container {
+    display: grid;
+    grid-template: 50% 50% / 50% 50%;
+  }
+  
+  .join {
+    grid-column: 1 / 3;
+  }
+
+  .monthly {
+    padding-bottom: 20px;
+  }
+
 }
